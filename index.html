@@ -2,98 +2,292 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>portfólio</title>
-    <link rel="stylesheet" href="css.css">
+    <title>youtube</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="midias/favicon.ico" type="image/x-icon">
 </head>
-<style>
-
-
-
-H3{
-
-font-family: Arial, Helvetica, sans-serif;
-font-style: italic;
-color: white;
-text-align:LEFT
-
-
-
-
-
-
-
-
-}
-
-    h1{
-
-        color: white;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-style: normal;
-
-
-    }
-
-
-p{
-    color: rgb(238, 238, 238);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-
-
-
-}
-a{
-    color: white;
-}
-body{
-background-image: linear-gradient(to right,blue,rgb(33, 33, 184))
-
-
-}
-
-img {
-
-    border-radius:5px;
-    border-radius: 50%;
-   
-}
-
-hr {
-    border-color: rgb(226, 226, 226);
-}
-
-</style>
 <body>
-            <h1><code>BEM VINDO AO MEU PORTFÓLIO,EU SOU FILIPE CEZAR</code></h1>
-            <p> <code>ESTE ESPAÇO SE TRATA DE UMA ÁREA ESTRITAMENTE PROFISSIONAL PARA MOSTRAR MEUS PROJETOS E CONTRIBUIÇÕES COMO DESENVOLVEDOR ,TENHO COMO OBJETIVO ESTAR POSTANDO CADA PROJETO DESENVOLVIDO NESTA PÁGINA,VOCÊ PODE OBTER MAIS INFORMAÇÕES SOBRE MIM LENDO AS INFORMAÇÕES ABAIXO.</code></p>
-            <hr>
-            <br> <br>
+    <header class="header"> 
+    
+        <a href="#">
+            <img src="midias/logoyoutube.png" width="150" alt="imagem do youtube" class="youtube.logo">
             
+        </a>
+        <form class="search-bar">
+        <input class="search-input" type="search" placeholder="search" aria-label="search"/>
+        <button type="submit" class="search-btn">
+         <img src="midias/lupa.png" width="25">
 
-        <img src="b1daad86-8e97-4df9-8947-ce2627417d10.jpg" alt="fotodosite" width="200" height="200" style="background-size: 10px;"
-        
-          
             
-            <BR> <BR>
+        </button>
+        </form>
+        <div class="menu-icons">
 
-            <H1><code>INFORMAÇÕES SOBRE MIM</code></H1> 
-            <P> <code>ATUALMENTE ESTOU CURSANDO CIÊNCIA DA COMPUTAÇÃO NO PRIMEIRO SEMESTRE,DESENVOLVENDO FAMILIARIDADE COM LINGUAGENS COMO HTML,CSS E JAVASCRIPT,POSSUO CONHECIMENTO INTERMEDIARIO EM EXCEL E WORD,DESENVOLVI UM INGLÊS INTERMEDIARIO APÓS UM PERIODO DE ESTUDOS,ATUALMENTE ESTOU APRENDENDO ALGORITMOS E LÓGICA DE PROGRAMAÇÃO VISANDO OBTER UMA FACILIDADE MAIOR PARA LIDAR COM LINGUAGENS MAIS AVANÇADAS E TAMBEM COM BANCO DE DADOS,POSSUO INTERESSE EM APRENDER SOBRE REDES DE COMPUTADORES, PROTOCOLOS DE REDE E CIBERSEGURANÇA.</code></P>  
-            <BR></BR> 
-            <h1><CODE>TENHA ACESSO A MAIS INFORMAÇÕES SOBRE MIM</CODE></h1>
-            <h3><code><a href="https://www.linkedin.com/in/filipe-cezar-da-fonseca-746954349/"> TENHA ACESSO AO MEU LINKEDIN</a></code></h3>
-            <h3><code><a href="CURRICULO (1).docx">TENHA ACESSO AO MEU CURRICULO</a></code></h3>
-            <h3><code><a href="https://github.com/Filipecezar00">TENHA ACESSO AO MEU GITHUB</a></code></h3>
-                    <BR></BR>
-            <H1><code>COMO ENTRAR EM CONTATO</code></H1>
-             <h3> <code> <a href=" https://wa.me/qr/DKZV6ACMVO6II1">TENHA ACESSO AO MEU WHATSAPP</a></code></h3>
-            <h3><code> EMAIL:cezarfilipe01@gmail.com</code></h3>
+            <a href="#">
+                <img src="midias/videoplus.png" width="25" alt="upload video">
+            </a>
+
+            <a href="#">
+                <img src="midias/apps.png" width="25" alt="apps">
+            </a>
+
+            <a href="#">
+                <img src="midias/bell.png" width="25" alt="notifications">
+            </a>
+            
+            <a href="#">
+                <img  class="menu chanel-icon"
+                src="midias/foto de perfil.avif" width="50" alt="profile">
+            </a>
+        </div>
+    </header>
+    <div class="categories">
+        <section class="category-section">
+            <button style="background-color: rgb(105, 104, 104); color: white;" class="category active">Tudo</button>
+            <button class="category active">tecnologia</button>
+            <button class="category active">canais</button>
+            <button class="category active">esportes</button>
+            <button class="category active">noticias</button>
+            <button class="category active">politicas</button>
+            <button class="category active">podcast</button>
+            <button class="category active">games</button>
+            <button class="category active">lives</button>
+            <button class="category active">debates</button>
+            <button class="category active">musica</button>
+            <button class="category active">moda</button>
+
+        </section>
+    </div>
+    <div class="videos">
+        <section class="video-section">
+            <article class="video-container">
+              <a href="#"class="tumbnaill" data-duration="12.31">
+                 <img class ="tumbnaill-image" src="midias/imagemtumbnaill.jpg">
+            
+                </a>
+
+            <div class="video botton section">
+                <a href="#"> 
+                    <img class="channel-icon" src="midias/imagemyoutube2.jpg"> 
+                    </a> 
+                    <div class="video-details">
+                        <a href="#" class="video-title">Configurando VS code para Programar em phyton</a>
+                        <a href="#" class="video-channel-name">Manual da programação</a>
+                      
+                    </div>
+                    <div class="video-metadata">
+                        <span>500.K Views</span>
+                                 •
+                        <span>Five years ago </span>
+            
+                    </div>
+                
+            </div>
+            </article>
+
+        </section>
+
+
+    </div>
+
+
+   
+
+
+
+       <article>
+
+        <div class="videos">
+            <section class="video-section">
+                <article class="video-container">
+                  <a href="#"class="tumbnaill" data-duration="21:33">
+                    <img class ="tumbnaill-image" src="midias/youtubethumnaill.jpg">
+                
+                    </a>
+    
+                <div class="video botton section">
+                    <a href="#">
+                        <img class="channel-icon" src="midias/coroacozinheiro.jpg">
+                        </a>
+                        <div class="video-details">
+                            <a href="#" class="video-title">Receita fácil e prática de Pudim</a>
+                            <a href="#" class="video-channel-name">Manual da cozinha</a>
+            
+                        </div>
+                        <div class="video-metadata">
+                            <span>80.K Views</span>
+                                        •
+                            <span>three years ago </span>
+                
+                        </div>
+                    
+                </div>
+                </article>
+        </span>
+                
+                        
+    
+            </section>
+            <div class="videos">
+                <section class="video-section">
+                    <article class="video-container">
+                      <a href="#"class="tumbnaill" data-duration="8:55">
+                         <img class="tumbnaill-image" src="midias/imagembahia.jpg">
+                    
+                        </a>
         
-            </BR>
+                    <div class="video botton section">
+                        <a href="#">
+                            <img class="channel-icon" src="midias/cazetvlogo.jpg">
+                            </a>
+                            <div class="video-details">
+                                <a href="#" class="video-title">Melhores Momentos Bahia VS Nacional-URU</a>
+                                <a href="#" class="video-channel-name">Cazé Tv</a>
+                
+                            </div>
+                            <div class="video-metadata">
+                                <span>125.K Views</span>
+                                       •
+                                <span>Eight hours ago </span>
+                    
+                            </div>
+                        
+                    </div>
+                    </article>
+                    </div>
+                    </article>
+        
+                </section>
+            
+    </article>
 
-            <h1><code><a href="pag002.html"> TENHA ACESSO AO MEUS PROJETOS </a></code></h1>
-    </section>
+    <article>
+        <div class="videos">
+            <section class="video-section">
+                <article class="video-container">
+                  <a href="#"class="tumbnaill" data-duration="16:30">
+                     <img class="tumbnaill-image" src="midias/receitadebolo.jpg">
+                
+                    </a>
+    
+                <div class="video botton section">
+                    <a href="#">
+                        <img class="channel-icon" src="midias/coroacozinheiro.jpg">
+                        </a>
+                        <div class="video-details">
+                            <a href="#" class="video-title">Receita de bolo de baunilha</a>
+                            <a href="#" class="video-channel-name">Receitas Brasil</a>
+            
+                        </div>
+                        <div class="video-metadata">
+                            <span>145.K Views</span>
+                                     •
+                            <span>Two hours ago </span>
+                
+                        </div>
+                    
+                </div>
+                </article>
+    
+            </section>
+
+    </article>
+
+    <article>
+        <div class="videos">
+            <section class="video-section">
+                <article class="video-container">
+                  <a href="#"class="tumbnaill" data-duration="21:20">
+                     <img class= "tumbnaill-image" src="midias/pegadinhatumb.jpg"
+                
+                    </a>
+    
+                <div class="video botton section">
+                    <a href="#">
+                        <img class="channel-icon" src="midias/sbt.jpg">
+                        </a>
+                        <div class="video-details">
+                            <a href="#" class="video-title">Pegadinha do Celular Novo</a>
+                            <a href="#" class="video-channel-name">SBT Brasil</a>
+            
+                        </div>
+                        <div class="video-metadata">
+                            <span>1.M Views</span>
+                                     •
+                            <span>Five years ago </span>
+                
+                        </div>
+                    
+                </div>
+                </article>
+                    
+                
+            
+    </article>
+
+    <article>
+        <div class="videos">
+            <section class="video-section">
+                <article class="video-container">
+                  <a href="#"class="tumbnaill" data-duration="55:31">
+                    <img  class= tumbnaill-image src="midias/excel.png">
+                
+                    </a>
+    
+                <div class="video botton section">
+                    <a href="#">
+                        <img class="channel-icon" src="midias/logo222.png">
+                        </a>
+                        <div class="video-details">
+                            <a href="#" class="video-title">Excel na Prática</a>
+                            <a href="#" class="video-channel-name">Informatica pra você</a>
+            
+                        </div>
+                        <div class="video-metadata">
+                            <span>2.M Views</span>
+                                    •
+                            <span>ten years ago </span>
+                
+                        </div>
+                    
+                </div>
+                </article>
+
+       
+                
+                        
+    
+            </section>
+    
+    </article>
+    <div class="videos">
+        <section class="video-section">
+            <article class="video-container">
+              <a href="#"class="tumbnaill" data-duration="31:44">
+                 <img class="tumbnaill-image" src="midias/macthumbanill.jpg">
+            
+                </a>
+
+            <div class="video botton section">
+                <a href="#"> 
+                   
+                    <img class="channel-icon" src="midias/informatica logo.png">
+
+                    </a>
+                    <div class="video-details">
+                        <a href="#" class="video-title">Como Resetar um Macbook</a>
+                        <a href="#" class="video-channel-name">Manual da Informatica</a>
+        
+                    </div>
+                    <div class="video-metadata">
+                        <span>2.K Views</span>
+                                •
+                        <span>two days ago </span>
+            
+                    </div>
+                
+            </div>
+            </article>
 </body>
-
 </html>
